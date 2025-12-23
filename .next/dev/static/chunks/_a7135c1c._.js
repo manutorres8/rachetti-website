@@ -91,13 +91,13 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 const sectionContent = {
     hero: {
         title: "Ricardo Rachetti & Asociados",
-        subtitle: "Excelencia jurídica al servicio de sus intereses",
+        subtitle: "Excelencia jurídica al servicio de nuestros clientes",
         imageAlt: "Ricardo Rachetti & Asociados"
     },
     about: {
         title: "Acerca de Nosotros",
         description: {
-            paragraph1: " es un estudio jurídico de reconocida trayectoria, fundado en 2015 con el compromiso de brindar servicios legales de la más alta calidad.",
+            paragraph1: " es un estudio jurídico notarial de reconocida trayectoria, fundado en 2015 con el compromiso de brindar servicios legales de la más alta calidad.",
             paragraph2: "Nuestro equipo multidisciplinario está compuesto por profesionales altamente calificados, especializados en diversas áreas del derecho, lo que nos permite ofrecer soluciones integrales y personalizadas a cada uno de nuestros clientes.",
             paragraph3: "Nos caracterizamos por nuestra ética profesional, compromiso con la excelencia y una atención cercana y personalizada que construye relaciones duraderas basadas en la confianza."
         },

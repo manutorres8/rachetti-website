@@ -4,14 +4,14 @@
 export const sectionContent = {
   hero: {
     title: "Ricardo Rachetti & Asociados",
-    subtitle: "Excelencia jurídica al servicio de sus intereses",
+    subtitle: "Excelencia jurídica al servicio de nuestros clientes",
     imageAlt: "Ricardo Rachetti & Asociados",
   },
   about: {
     title: "Acerca de Nosotros",
     description: {
       paragraph1:
-        " es un estudio jurídico de reconocida trayectoria, fundado en 2015 con el compromiso de brindar servicios legales de la más alta calidad.",
+        " es un estudio jurídico notarial de reconocida trayectoria, fundado en 2015 con el compromiso de brindar servicios legales de la más alta calidad.",
       paragraph2:
         "Nuestro equipo multidisciplinario está compuesto por profesionales altamente calificados, especializados en diversas áreas del derecho, lo que nos permite ofrecer soluciones integrales y personalizadas a cada uno de nuestros clientes.",
       paragraph3:
