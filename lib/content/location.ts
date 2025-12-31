@@ -9,7 +9,7 @@ export const locationContent = {
     fullWithFloor: "Plaza Cagancha 1356, oficina 404\nMontevideo, Uruguay",
   },
   contact: {
-    phones: ["2900 0800"],
+    phones: ["+598 98 851 719"],
     email: "rrachetti@rachettiyasoc.com",
     hours: "Lun - Vie: 10:00 - 18:00\n",
   },
@@ -20,7 +20,7 @@ export const locationContent = {
     },
     {
       title: "Teléfono",
-      content: "2900 0800",
+      content: "+598 98 851 719",
     },
     {
       title: "Email",

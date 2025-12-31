@@ -26,7 +26,7 @@ export const commonTexts = {
   placeholders: {
     name: "Juan Pérez",
     email: "juan@email.com",
-    phone: "+54 11 1234-5678",
+    phone: "+598 98 851 719",
     subject: "Consulta legal",
     message: "Cuéntenos cómo podemos ayudarle...",
   },

@@ -124,7 +124,7 @@ const commonTexts = {
     placeholders: {
         name: "Juan Pérez",
         email: "juan@email.com",
-        phone: "+54 11 1234-5678",
+        phone: "+598 98 851 719",
         subject: "Consulta legal",
         message: "Cuéntenos cómo podemos ayudarle..."
     },
@@ -157,7 +157,7 @@ const navigationContent = {
         inicio: "Inicio",
         nosotros: "Nosotros",
         servicios: "Servicios",
-        empleados: "Empleados",
+        empleados: "Equipo",
         novedades: "Novedades",
         ubicacion: "Ubicación",
         contacto: "Contacto"
@@ -176,13 +176,13 @@ const navigationContent = {
 const sectionContent = {
     hero: {
         title: "Ricardo Rachetti & Asociados",
-        subtitle: "Excelencia jurídica al servicio de sus intereses",
+        subtitle: "Excelencia jurídica al servicio de nuestros clientes",
         imageAlt: "Ricardo Rachetti & Asociados"
     },
     about: {
         title: "Acerca de Nosotros",
         description: {
-            paragraph1: " es un estudio jurídico de reconocida trayectoria, fundado en 2015 con el compromiso de brindar servicios legales de la más alta calidad.",
+            paragraph1: " es un estudio jurídico notarial de reconocida trayectoria, fundado en 2015 con el compromiso de brindar servicios legales de la más alta calidad.",
             paragraph2: "Nuestro equipo multidisciplinario está compuesto por profesionales altamente calificados, especializados en diversas áreas del derecho, lo que nos permite ofrecer soluciones integrales y personalizadas a cada uno de nuestros clientes.",
             paragraph3: "Nos caracterizamos por nuestra ética profesional, compromiso con la excelencia y una atención cercana y personalizada que construye relaciones duraderas basadas en la confianza."
         },
@@ -279,7 +279,7 @@ const locationContent = {
     },
     contact: {
         phones: [
-            "2900 0800"
+            "+598 98 851 719"
         ],
         email: "rrachetti@rachettiyasoc.com",
         hours: "Lun - Vie: 10:00 - 18:00\n"
@@ -291,7 +291,7 @@ const locationContent = {
         },
         {
             title: "Teléfono",
-            content: "2900 0800"
+            content: "+598 98 851 719"
         },
         {
             title: "Email",

@@ -1,7 +1,24 @@
 "use client"
 
 import { useRef } from "react"
-import { Building2, FileText, Gavel, Shield, Scale, Database, Users2, UserCheck, Home, Briefcase } from "lucide-react"
+import { 
+  FileText, 
+  Scale, 
+  Lightbulb, 
+  Handshake,
+  Shield,
+  Gavel,
+  Lock,
+  Database,
+  Users,
+  Home,
+  Building2,
+  Users2,
+  DollarSign,
+  BookOpen,
+  Briefcase,
+  TrendingUp
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
@@ -11,16 +28,22 @@ import { ServiceCard } from "@/components/features/service-card"
 
 // Mapeo de iconos para servicios (en orden de allServices)
 const serviceIcons = [
-  Building2,    // Derecho Civil y Comercial
-  Scale,        // Mediación y Arbitraje
-  Shield,        // Competencia Desleal y Defensa de la Competencia
-  Gavel,         // Derecho Administrativo
-  FileText,      // Derecho Penal
-  Database,      // Protección de Datos Personales
-  UserCheck,     // Derecho de los Consumidores
-  Home,          // Inversión Inmobiliaria
-  Building2,     // Derecho Corporativo
-  Users2,        // Derecho Laboral
+  FileText,          // Derecho Civil
+  Users,             // Derecho de Familia
+  Lightbulb,         // Propiedad Intelectual e Industrial
+  Handshake,         // Arbitraje y Mediación
+  Shield,            // Defensa de la Competencia
+  Gavel,             // Derecho Administrativo
+  Lock,              // Derecho Penal y Procesal Penal
+  Database,          // Protección de Datos Personales
+  Users2,            // Derecho de los Consumidores
+  Home,              // Inversión Inmobiliaria
+  Building2,         // Derecho Corporativo y Comercial
+  Briefcase,         // Derecho Laboral
+  DollarSign,        // Derecho Fiscal
+  BookOpen,          // Derecho Notarial
+  TrendingUp,        // Derecho Societario
+  Scale,             // Regulación Financiera y Bancaria
 ]
 
 export default function Services() {

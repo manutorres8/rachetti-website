@@ -10,7 +10,7 @@ export const navigationContent = {
     inicio: "Inicio",
     nosotros: "Nosotros",
     servicios: "Servicios",
-    empleados: "Empleados",
+    empleados: "Equipo",
     novedades: "Novedades",
     ubicacion: "Ubicación",
     contacto: "Contacto",

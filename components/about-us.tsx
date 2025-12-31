@@ -26,14 +26,14 @@ export default function AboutUs() {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <p className="text-lg text-navy-dark/80 leading-relaxed mb-6">
+              <p className="text-lg text-navy-dark/80 leading-relaxed mb-6 text-justify">
                 <span className="font-serif text-2xl text-burgundy">{sectionContent.hero.title}</span>{" "}
                 {sectionContent.about.description.paragraph1}
               </p>
-              <p className="text-lg text-navy-dark/80 leading-relaxed mb-6">
+              <p className="text-lg text-navy-dark/80 leading-relaxed mb-6 text-justify">
                 {sectionContent.about.description.paragraph2}
               </p>
-              <p className="text-lg text-navy-dark/80 leading-relaxed">
+              <p className="text-lg text-navy-dark/80 leading-relaxed text-justify">
                 {sectionContent.about.description.paragraph3}
               </p>
             </div>
