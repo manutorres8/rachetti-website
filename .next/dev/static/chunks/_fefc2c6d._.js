@@ -565,7 +565,7 @@ const allServices = [
         description: "Asesoramos y representamos en asuntos de familia, con especial atención a la defensa del interés superior de niñas, niños y adolescentes. Intervenimos en divorcios, tenencia, régimen de visitas, alimentos, adopciones y sucesiones, aplicando el derecho desde una perspectiva humana y responsable."
     },
     {
-        title: "Derecho de Autor y Propiedad Intelectual",
+        title: "Propiedad Intelectual e Industrial",
         description: "Protección legal de obras, marcas y creaciones intelectuales, así como asesoramiento en registro, licencias y defensa de derechos frente a usos no autorizados."
     },
     {
@@ -586,7 +586,7 @@ const allServices = [
     },
     {
         title: "Protección de Datos Personales",
-        description: "Asesoramiento en cumplimiento de la normativa de protección de datos personales, incluyendo funciones de Delegado de Protección de Datos, evaluaciones de impacto, diseño de políticas internas y relación con el regulador."
+        description: "Asesoramiento en cumplimiento de la normativa de protección de datos personales. Evaluaciones de impacto, diseño de políticas internas y relación con el regulador."
     },
     {
         title: "Derecho de los Consumidores",
