@@ -309,9 +309,8 @@ const metadataContent = {
     ()=>whatsappContent
 ]);
 const whatsappContent = {
-    defaultMessage: `Hola, gracias por contactarte con el equipo de abogados de Rachetti y Asociados.
-Estamos para ayudarte y responder tu consulta a la brevedad.
-Contanos brevemente tu caso y uno de nuestros profesionales se pondrá en contacto contigo.`
+    defaultMessage: `Hola, quisiera coordinar una reunión para realizar una consulta legal.
+Quedo a disposición para acordar día y horario. Muchas gracias.`
 };
 }),
 "[project]/lib/content/pages.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {

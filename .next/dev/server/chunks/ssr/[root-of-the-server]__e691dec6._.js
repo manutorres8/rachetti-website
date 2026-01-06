@@ -376,9 +376,8 @@ const metadataContent = {
     ()=>whatsappContent
 ]);
 const whatsappContent = {
-    defaultMessage: `Hola, gracias por contactarte con el equipo de abogados de Rachetti y Asociados.
-Estamos para ayudarte y responder tu consulta a la brevedad.
-Contanos brevemente tu caso y uno de nuestros profesionales se pondrá en contacto contigo.`
+    defaultMessage: `Hola, quisiera coordinar una reunión para realizar una consulta legal.
+Quedo a disposición para acordar día y horario. Muchas gracias.`
 };
 }),
 "[project]/lib/content/pages.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
@@ -472,7 +471,7 @@ function RootLayout({ children }) {
             children: [
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$whatsapp$2d$floating$2d$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["WhatsAppFloatingButton"], {
-                    phoneNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5491112345678"
+                    phoneNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "59898851719"
                 }, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
                     lineNumber: 31,

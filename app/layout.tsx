@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${inter.className} ${playfair.variable} antialiased`}>
         {children}
-        <WhatsAppFloatingButton phoneNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5491112345678"} />
+        <WhatsAppFloatingButton phoneNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "59898851719"} />
         <Analytics />
       </body>
     </html>
