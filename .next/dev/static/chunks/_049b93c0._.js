@@ -689,7 +689,7 @@ const teamMembers = [
         id: "Alicia-Cauteruccio",
         name: "Esc. Alicia Cauteruccio",
         role: "Socia Fundadora",
-        specialty: "sin información",
+        specialty: "Escribana",
         email: "alicia@rachettiyasoc.com",
         linkedin: "https://linkedin.com/in/alicia-cauteruccio",
         image: "/Alicia.jpg",
@@ -704,6 +704,16 @@ const teamMembers = [
         linkedin: "https://www.linkedin.com/in/marthaelenacavigliaqueirolo/?originalSubdomain=uy",
         image: "/marthacaviglia.jpeg",
         description: "Abogada especializada en propiedad intelectual y gestión colectiva, con más de 30 años de experiencia en el sector cultural uruguayo. Ha trabajado con organizaciones como AGADU, SUDEI y la Cámara Uruguaya de Productores de Fonogramas y Videogramas, liderando procesos de recaudación, digitalización y acuerdos internacionales."
+    },
+    {
+        id: "maria-ramos",
+        name: "María Ramos",
+        role: "Colaboradora",
+        specialty: "Procuradora",
+        email: "MariaRamos@rachettiyasoc.com",
+        linkedin: "",
+        image: "/mariaRamos.jpeg",
+        description: "Procuradora y gestora del estudio, con más de cinco años de experiencia en la administración y coordinación de tareas jurídicas. Interviene en el seguimiento de expedientes, la gestión de trámites y la atención a clientes, aportando orden, continuidad y apoyo permanente al trabajo del equipo profesional."
     }
 ];
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -1244,9 +1254,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$intersection
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/lib/content/index.ts [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2f$sections$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/content/sections.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$features$2f$team$2d$member$2d$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/features/team-member-card.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.7_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2f$common$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/content/common.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
+;
+;
 ;
 ;
 ;
@@ -1274,14 +1290,14 @@ function Team() {
                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2f$sections$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["sectionContent"].team.title
                             }, void 0, false, {
                                 fileName: "[project]/components/team.tsx",
-                                lineNumber: 20,
+                                lineNumber: 23,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-20 h-1 bg-burgundy mx-auto mb-6"
                             }, void 0, false, {
                                 fileName: "[project]/components/team.tsx",
-                                lineNumber: 21,
+                                lineNumber: 24,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1289,13 +1305,13 @@ function Team() {
                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2f$sections$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["sectionContent"].team.subtitle
                             }, void 0, false, {
                                 fileName: "[project]/components/team.tsx",
-                                lineNumber: 22,
+                                lineNumber: 25,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/team.tsx",
-                        lineNumber: 19,
+                        lineNumber: 22,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1306,28 +1322,51 @@ function Team() {
                                 showSocialIcons: true
                             }, member.id, false, {
                                 fileName: "[project]/components/team.tsx",
-                                lineNumber: 29,
+                                lineNumber: 32,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/team.tsx",
-                        lineNumber: 27,
+                        lineNumber: 30,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-center",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/equipo",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                size: "lg",
+                                className: "bg-burgundy hover:bg-burgundy/90 text-white font-semibold px-8 py-6 text-base",
+                                children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2f$common$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["commonTexts"].buttons.viewAllTeam
+                            }, void 0, false, {
+                                fileName: "[project]/components/team.tsx",
+                                lineNumber: 43,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/team.tsx",
+                            lineNumber: 42,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/team.tsx",
+                        lineNumber: 41,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/team.tsx",
-                lineNumber: 18,
+                lineNumber: 21,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/team.tsx",
-            lineNumber: 17,
+            lineNumber: 20,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/team.tsx",
-        lineNumber: 16,
+        lineNumber: 19,
         columnNumber: 5
     }, this);
 }

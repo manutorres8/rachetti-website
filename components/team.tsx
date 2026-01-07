@@ -5,6 +5,9 @@ import { teamMembers } from "@/lib/data"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { sectionContent } from "@/lib/content"
 import { TeamMemberCard } from "@/components/features/team-member-card"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { commonTexts } from "@/lib/content"
 
 export default function Team() {
   const sectionRef = useRef<HTMLElement | null>(null)
@@ -34,6 +37,18 @@ export default function Team() {
               />
             ))}
           </div>
+
+          <div className="text-center">
+            <Link href="/equipo">
+              <Button
+                size="lg"
+                className="bg-burgundy hover:bg-burgundy/90 text-white font-semibold px-8 py-6 text-base"
+              >
+                {commonTexts.buttons.viewAllTeam}
+              </Button>
+            </Link>
+          </div>
+
         </div>
       </div>
     </section>

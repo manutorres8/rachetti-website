@@ -16,7 +16,7 @@ export const teamMembers: TeamMember[] = [
     id: "Alicia-Cauteruccio",
     name: "Esc. Alicia Cauteruccio",
     role: "Socia Fundadora",
-    specialty: "sin información",
+    specialty: "Escribana",
     email: "alicia@rachettiyasoc.com",
     linkedin: "https://linkedin.com/in/alicia-cauteruccio",
     image: "/Alicia.jpg",
@@ -33,6 +33,17 @@ export const teamMembers: TeamMember[] = [
     image: "/marthacaviglia.jpeg",
     description:
       "Abogada especializada en propiedad intelectual y gestión colectiva, con más de 30 años de experiencia en el sector cultural uruguayo. Ha trabajado con organizaciones como AGADU, SUDEI y la Cámara Uruguaya de Productores de Fonogramas y Videogramas, liderando procesos de recaudación, digitalización y acuerdos internacionales."
+  },
+  {
+    id: "maria-ramos",
+    name: "María Ramos",
+    role: "Colaboradora",
+    specialty: "Procuradora",
+    email: "MariaRamos@rachettiyasoc.com",
+    linkedin: "",
+    image: "/mariaRamos.jpeg",
+    description:
+      "Procuradora y gestora del estudio, con más de cinco años de experiencia en la administración y coordinación de tareas jurídicas. Interviene en el seguimiento de expedientes, la gestión de trámites y la atención a clientes, aportando orden, continuidad y apoyo permanente al trabajo del equipo profesional."
   },
   
 ]
