@@ -13,7 +13,7 @@ export const navigationContent = {
     empleados: "Equipo",
     novedades: "Novedades",
     ubicacion: "Ubicación",
-    contacto: "Contacto",
+    //contacto: "Contacto",
   },
 } as const
 

@@ -71,8 +71,7 @@ const navigationContent = {
         servicios: "Servicios",
         empleados: "Equipo",
         novedades: "Novedades",
-        ubicacion: "Ubicación",
-        contacto: "Contacto"
+        ubicacion: "Ubicación"
     }
 };
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {

@@ -18,7 +18,7 @@ export default function Home() {
       <Team />
       <News />
       <Location />
-      <Contact />
+      {/*<Contact />*/}
       <Footer />
     </main>
   )

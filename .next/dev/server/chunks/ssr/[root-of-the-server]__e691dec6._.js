@@ -159,8 +159,7 @@ const navigationContent = {
         servicios: "Servicios",
         empleados: "Equipo",
         novedades: "Novedades",
-        ubicacion: "Ubicación",
-        contacto: "Contacto"
+        ubicacion: "Ubicación"
     }
 };
 }),
