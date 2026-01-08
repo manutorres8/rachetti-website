@@ -90,7 +90,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 ]);
 const sectionContent = {
     hero: {
-        title: "Ricardo Rachetti & Asociados",
+        title: "Rachetti & Asociados",
         subtitle: "Excelencia jurídica al servicio de nuestros clientes",
         imageAlt: "Ricardo Rachetti & Asociados"
     },

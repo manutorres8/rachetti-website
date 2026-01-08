@@ -3,7 +3,7 @@
  */
 export const sectionContent = {
   hero: {
-    title: "Ricardo Rachetti & Asociados",
+    title: "Rachetti & Asociados",
     subtitle: "Excelencia jurídica al servicio de nuestros clientes",
     imageAlt: "Ricardo Rachetti & Asociados",
   },
