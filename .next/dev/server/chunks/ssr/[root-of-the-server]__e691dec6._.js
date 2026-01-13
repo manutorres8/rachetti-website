@@ -294,7 +294,7 @@ const locationContent = {
         },
         {
             title: "Email",
-            content: "rrachetti@rachettiyasoc.com"
+            content: "info@rachettiyasoc.com"
         },
         {
             title: "Horario",
