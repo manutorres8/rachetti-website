@@ -14,8 +14,8 @@ export async function POST(request: Request) {
     }
 
     const data = await resend.emails.send({
-      from: 'contacto@rachetti.com',
-      to: 'info@rachetti.com',
+      from: 'onboarding@resend.dev',
+      to: 'info@rachettiyasoc.com',
       subject: `Nuevo mensaje de contacto: ${subject}`,
       html: `
         <h2>Nuevo mensaje de contacto</h2>
