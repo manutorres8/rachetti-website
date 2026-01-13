@@ -20,18 +20,38 @@ export default function Contact() {
     subject: "",
     message: "",
   })
+  const [isLoading, setIsLoading] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
-    alert(formContent.contact.successMessage)
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    })
+    setIsLoading(true)
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        alert(formContent.contact.successMessage)
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        })
+      } else {
+        const error = await response.json()
+        alert(`Error: ${error.error || 'Error al enviar el mensaje'}`)
+      }
+    } catch (error) {
+      alert('Error al enviar el mensaje. Por favor intenta de nuevo.')
+      console.error('Error:', error)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -135,8 +155,13 @@ export default function Contact() {
             </div>
 
             <div className="text-center">
-              <Button type="submit" size="lg" className="bg-burgundy hover:bg-burgundy-dark text-white px-12">
-                {formContent.contact.submitButton}
+              <Button 
+                type="submit" 
+                size="lg" 
+                className="bg-burgundy hover:bg-burgundy-dark text-white px-12 disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={isLoading}
+              >
+                {isLoading ? "Enviando..." : formContent.contact.submitButton}
               </Button>
             </div>
           </form>
