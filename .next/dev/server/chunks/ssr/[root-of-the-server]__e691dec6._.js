@@ -280,7 +280,7 @@ const locationContent = {
         phones: [
             "+598 98 851 719"
         ],
-        email: "rrachetti@rachettiyasoc.com",
+        email: "info@rachettiyasoc.com",
         hours: "Lun - Vie: 10:00 - 18:00\n"
     },
     contactInfo: [
