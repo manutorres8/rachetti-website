@@ -92,7 +92,8 @@ const navigationContent = {
         servicios: "Servicios",
         empleados: "Equipo",
         novedades: "Novedades",
-        ubicacion: "Ubicación"
+        ubicacion: "Ubicación",
+        contacto: "Contacto"
     }
 };
 }),
