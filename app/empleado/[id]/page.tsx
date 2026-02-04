@@ -14,9 +14,18 @@ export default function EmpleadoPage() {
 
   useScrollToTop()
 
-  const empleadoId = typeof params.id === "string" ? params.id : undefined
-  const empleado = empleadoId ? teamMembers.find((member) => member.id === empleadoId) : undefined
-  const noticiasRelacionadas = empleadoId ? newsItems.filter((news) => news.relatedTeamMember === empleadoId) : []
+  const handleContactClick = () => {
+    // Navegar a la página principal con el parámetro del empleado
+    router.push(`/?empleado=${empleadoId}`)
+    
+    // Hacer scroll a la sección de contacto después de un breve delay
+    setTimeout(() => {
+      const contactSection = document.getElementById('contacto')
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' })
+      }
+    }, 100)
+  }
 
   React.useEffect(() => {
     setMounted(true)
@@ -94,12 +103,12 @@ export default function EmpleadoPage() {
                       LinkedIn
                     </a>
                   )}
-                  <a
-                    href={`/#contacto?empleado=${empleadoId}`}
+                  <button
+                    onClick={handleContactClick}
                     className="px-6 py-3 border border-white/20 hover:border-white/40 text-white rounded-sm transition-all hover:scale-105"
                   >
                     Contactar
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
