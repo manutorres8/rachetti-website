@@ -95,7 +95,7 @@ export default function EmpleadoPage() {
                     </a>
                   )}
                   <a
-                    href="/#contacto"
+                    href={`/#contacto?empleado=${empleadoId}`}
                     className="px-6 py-3 border border-white/20 hover:border-white/40 text-white rounded-sm transition-all hover:scale-105"
                   >
                     Contactar

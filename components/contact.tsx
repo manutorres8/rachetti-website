@@ -2,17 +2,21 @@
 
 import type React from "react"
 
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
+import { useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { sectionContent, formContent, commonTexts } from "@/lib/content"
+import { teamMembers } from "@/lib/data"
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null)
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.2 })
+  const searchParams = useSearchParams()
+  const [selectedEmployee, setSelectedEmployee] = useState(null)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -22,6 +26,22 @@ export default function Contact() {
   })
   const [isLoading, setIsLoading] = useState(false)
 
+  useEffect(() => {
+    const empleadoParam = searchParams.get('empleado')
+    if (empleadoParam) {
+      const employee = teamMembers.find(member => member.id === empleadoParam)
+      setSelectedEmployee(employee)
+      
+      // Si hay un empleado seleccionado, ajustar el asunto
+      if (employee) {
+        setFormData(prev => ({
+          ...prev,
+          subject: `Consulta sobre ${employee.name}`
+        }))
+      }
+    }
+  }, [searchParams])
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
@@ -30,7 +50,11 @@ export default function Contact() {
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          employeeId: selectedEmployee?.id,
+          recipientEmail: selectedEmployee?.email || 'info@rachettiyasoc.com'
+        }),
       })
 
       if (response.ok) {
@@ -68,9 +92,19 @@ export default function Contact() {
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">{sectionContent.contact.title}</h2>
             <div className="w-20 h-1 bg-burgundy mx-auto mb-6" />
-            <p className="text-white/80 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-white/80 text-lg max-w-2xl mx-auto leading-relaxed mb-4">
               {sectionContent.contact.subtitle}
             </p>
+            {selectedEmployee && (
+              <div className="bg-burgundy/20 border border-burgundy/30 rounded-lg p-4 max-w-2xl mx-auto">
+                <p className="text-burgundy font-medium">
+                  Estás contactando a <span className="font-bold">{selectedEmployee.name}</span>
+                </p>
+                <p className="text-white/70 text-sm mt-1">
+                  Tu mensaje será enviado directamente a este profesional
+                </p>
+              </div>
+            )}
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">

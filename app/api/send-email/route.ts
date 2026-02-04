@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 export async function POST(request: Request) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
-    const { name, email, phone, subject, message } = await request.json();
+    const { name, email, phone, subject, message, recipientEmail } = await request.json();
 
     // Validar que los campos requeridos existan
     if (!name || !email || !subject || !message) {
@@ -15,7 +15,7 @@ export async function POST(request: Request) {
 
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'info@rachettiyasoc.com',
+      to: recipientEmail || 'info@rachettiyasoc.com',
       subject: `Nuevo mensaje de contacto: ${subject}`,
       html: `
         <h2>Nuevo mensaje de contacto</h2>
