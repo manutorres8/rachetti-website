@@ -83,15 +83,17 @@ export default function EmpleadoPage() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <a
-                    href={empleado.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-3 bg-burgundy hover:bg-burgundy/80 text-white rounded-sm transition-all hover:scale-105"
-                  >
-                    <Linkedin className="w-4 h-4" />
-                    LinkedIn
-                  </a>
+                  {empleado.linkedin && empleado.linkedin.trim() !== "" && (
+                    <a
+                      href={empleado.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-6 py-3 bg-burgundy hover:bg-burgundy/80 text-white rounded-sm transition-all hover:scale-105"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                      LinkedIn
+                    </a>
+                  )}
                   <a
                     href="/#contacto"
                     className="px-6 py-3 border border-white/20 hover:border-white/40 text-white rounded-sm transition-all hover:scale-105"
