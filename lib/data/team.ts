@@ -2,7 +2,7 @@ import type { TeamMember } from "@/lib/types"
 
 export const teamMembers: TeamMember[] = [
   {
-    id: "ricardo-rachetti",
+    id: "Ricardo-rachetti",
     name: "Dr. Ricardo Rachetti",
     role: "Socio Fundador",
     specialty: "Derecho Laboral",
@@ -24,7 +24,7 @@ export const teamMembers: TeamMember[] = [
       "Escribana, coordinadora de Asuntos Legislativos de la Asociación de Escribanos del Uruguay. Cuenta con amplia experiencia en el análisis, seguimiento y elaboración de iniciativas normativas vinculadas al ejercicio notarial, aportando una mirada técnica y especializada al desarrollo del marco legal de la profesión."
     },
   {
-    id: "martha-caviglia",
+    id: "Martha-caviglia",
     name: "Dra. Martha Caviglia",
     role: "Socia",
     specialty: "Propiedad Intelectual y Gestión Colectiva",
@@ -35,15 +35,15 @@ export const teamMembers: TeamMember[] = [
       "Abogada especializada en propiedad intelectual y gestión colectiva, con más de 30 años de experiencia en el sector cultural uruguayo. Ha trabajado con organizaciones como AGADU, SUDEI y la Cámara Uruguaya de Productores de Fonogramas y Videogramas, liderando procesos de recaudación, digitalización y acuerdos internacionales."
   },
   {
-    id: "maria-ramos",
-    name: "María Ramos",
-    role: "Colaboradora",
-    specialty: "Procuradora",
-    email: "MariaRamos@rachettiyasoc.com",
-    linkedin: "",
-    image: "/mariaRamos.jpeg",
-    description:
-      "Procuradora y gestora del estudio, con más de cinco años de experiencia en la administración y coordinación de tareas jurídicas. Interviene en el seguimiento de expedientes, la gestión de trámites y la atención a clientes, aportando orden, continuidad y apoyo permanente al trabajo del equipo profesional."
-  },
+  id: "Fiorella-de-angelis",
+  name: "Esc. Fiorella De Angelis",
+  role: "Asociada",
+  specialty: "Escribana",
+  email: "fdeangeles@rachettiyasoc.com",
+  linkedin: "",
+  image: "/FiorelladeAngelis.jpeg",
+  description:
+    "Escribana y asociada del estudio. Desarrolla su ejercicio profesional en las distintas áreas de la actividad notarial, con participación en la redacción y autorización de actos públicos y privados, y en el asesoramiento a clientes en asuntos notariales."
+},
   
 ]
