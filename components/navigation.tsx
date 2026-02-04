@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -9,6 +10,7 @@ import { navigationContent } from "@/lib/content"
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +30,15 @@ export default function Navigation() {
     { href: "#contacto", label: navigationContent.menu.contacto },
   ]
 
+  // Función para obtener el href correcto basado en la página actual
+  const getHref = (href: string) => {
+    if (pathname === "/") {
+      return href // En página principal, usar ancla directa
+    } else {
+      return `/${href}` // En otras páginas, ir a página principal con ancla
+    }
+  }
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -46,7 +57,7 @@ export default function Navigation() {
             {menuItems.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={getHref(item.href)}
                 className="text-white/90 hover:text-burgundy transition-colors text-sm uppercase tracking-wide"
               >
                 {item.label}
@@ -73,7 +84,7 @@ export default function Navigation() {
             {menuItems.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={getHref(item.href)}
                 className="block text-white/90 hover:text-burgundy transition-colors py-2 text-sm uppercase tracking-wide"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
