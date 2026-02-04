@@ -515,7 +515,7 @@ const teamMembers = [
         role: "Socia Fundadora",
         specialty: "Escribana",
         email: "alicia@rachettiyasoc.com",
-        linkedin: "https://linkedin.com/in/alicia-cauteruccio",
+        linkedin: "https://www.linkedin.com/in/alicia-cauteruccio-19b46a26/",
         image: "/Alicia.jpg",
         description: "Escribana, coordinadora de Asuntos Legislativos de la Asociación de Escribanos del Uruguay. Cuenta con amplia experiencia en el análisis, seguimiento y elaboración de iniciativas normativas vinculadas al ejercicio notarial, aportando una mirada técnica y especializada al desarrollo del marco legal de la profesión."
     },
