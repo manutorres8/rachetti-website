@@ -11,12 +11,13 @@ import { Label } from "@/components/ui/label"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { sectionContent, formContent, commonTexts } from "@/lib/content"
 import { teamMembers } from "@/lib/data"
+import type { TeamMember } from "@/lib/types"
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null)
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.2 })
   const searchParams = useSearchParams()
-  const [selectedEmployee, setSelectedEmployee] = useState(null)
+  const [selectedEmployee, setSelectedEmployee] = useState<TeamMember | null>(null)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
