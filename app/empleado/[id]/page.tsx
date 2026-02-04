@@ -14,17 +14,13 @@ export default function EmpleadoPage() {
 
   useScrollToTop()
 
+  const empleadoId = typeof params.id === "string" ? params.id : undefined
+  const empleado = empleadoId ? teamMembers.find((member) => member.id === empleadoId) : undefined
+  const noticiasRelacionadas = empleadoId ? newsItems.filter((news) => news.relatedTeamMember === empleadoId) : []
+
   const handleContactClick = () => {
-    // Navegar a la página principal con el parámetro del empleado
-    router.push(`/?empleado=${empleadoId}`)
-    
-    // Hacer scroll a la sección de contacto después de un breve delay
-    setTimeout(() => {
-      const contactSection = document.getElementById('contacto')
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' })
-      }
-    }, 100)
+    // Usar window.location para navegación completa con hash
+    window.location.href = `/?empleado=${empleadoId}#contacto`
   }
 
   React.useEffect(() => {
