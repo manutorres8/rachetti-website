@@ -30,12 +30,12 @@ export default function Navigation() {
     { href: "#contacto", label: navigationContent.menu.contacto },
   ]
 
-  // Función para obtener el href correcto basado en la página actual
+  
   const getHref = (href: string) => {
     if (pathname === "/") {
-      return href // En página principal, usar ancla directa
+      return href 
     } else {
-      return `/${href}` // En otras páginas, ir a página principal con ancla
+      return `/${href}` 
     }
   }
 
