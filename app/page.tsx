@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import Navigation from "@/components/navigation"
 import Hero from "@/components/hero"
 import AboutUs from "@/components/about-us"
@@ -18,7 +19,9 @@ export default function Home() {
       <Team />
       <News />
       <Location />
-      <Contact />
+      <Suspense fallback={null}>
+        <Contact />
+      </Suspense>
       <Footer />
     </main>
   )

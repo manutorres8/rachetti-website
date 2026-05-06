@@ -687,7 +687,7 @@ const newsItems = [
     },
     {
         id: "droit-de-suite-uruguay",
-        image: "/droitDeSuite.jpeg",
+        image: "/charladroitDeSuite.jpeg",
         date: "Abr 2026",
         title: "El droit de suite en Uruguay: un modelo legislativo que la región debe conocer",
         excerpt: "El derecho de participación del artista en Uruguay se estructura sobre mecanismos legales específicos que lo convierten en un sistema operativo, con desafíos aún presentes en el mercado privado del arte.",
