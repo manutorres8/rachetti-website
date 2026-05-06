@@ -53,7 +53,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$re
 async function POST(request) {
     try {
         const resend = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$resend$40$6$2e$7$2e$0$2f$node_modules$2f$resend$2f$dist$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__["Resend"](process.env.RESEND_API_KEY);
-        const { name, email, phone, subject, message } = await request.json();
+        const { name, email, phone, subject, message, recipientEmail } = await request.json();
         // Validar que los campos requeridos existan
         if (!name || !email || !subject || !message) {
             return Response.json({
@@ -64,7 +64,7 @@ async function POST(request) {
         }
         const data = await resend.emails.send({
             from: 'onboarding@resend.dev',
-            to: 'info@rachettiyasoc.com',
+            to: recipientEmail || 'info@rachettiyasoc.com',
             subject: `Nuevo mensaje de contacto: ${subject}`,
             html: `
         <h2>Nuevo mensaje de contacto</h2>

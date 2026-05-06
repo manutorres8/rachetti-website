@@ -28,7 +28,7 @@ export const teamMembers: TeamMember[] = [
     name: "Dra. Martha Caviglia",
     role: "Socia",
     specialty: "Propiedad Intelectual y Gestión Colectiva",
-    email: "MarthaCaviglia@rachettiyasoc.com",
+    email: "marthacaviglia@rachettiyasoc.com",
     linkedin: "https://www.linkedin.com/in/marthaelenacavigliaqueirolo/?originalSubdomain=uy",
     image: "/marthacaviglia.jpeg",
     description:

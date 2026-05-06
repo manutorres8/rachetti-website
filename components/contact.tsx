@@ -29,8 +29,11 @@ export default function Contact() {
 
   useEffect(() => {
     const empleadoParam = searchParams.get('empleado')
+    console.log('🔍 URL parameter empleado:', empleadoParam)
+    
     if (empleadoParam) {
       const employee = teamMembers.find(member => member.id === empleadoParam)
+      console.log('👤 Found employee:', employee)
       setSelectedEmployee(employee)
       
       // Si hay un empleado seleccionado, ajustar el asunto
@@ -47,15 +50,19 @@ export default function Contact() {
     e.preventDefault()
     setIsLoading(true)
 
+    const emailData = {
+      ...formData,
+      employeeId: selectedEmployee?.id,
+      recipientEmail: selectedEmployee?.email || 'info@rachettiyasoc.com'
+    }
+
+    console.log('📤 Sending email data:', emailData)
+
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...formData,
-          employeeId: selectedEmployee?.id,
-          recipientEmail: selectedEmployee?.email || 'info@rachettiyasoc.com'
-        }),
+        body: JSON.stringify(emailData),
       })
 
       if (response.ok) {
