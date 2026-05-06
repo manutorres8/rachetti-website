@@ -23,7 +23,7 @@ export const newsItems: NewsItem[] = [
   },
   {
   id: "droit-de-suite-uruguay",
-  image: "/droitDeSuite.jpeg",
+  image: "/charladroitDeSuite.jpeg",
   date: "Abr 2026",
   title: "El droit de suite en Uruguay: un modelo legislativo que la región debe conocer",
   excerpt:

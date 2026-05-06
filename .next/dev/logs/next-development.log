@@ -1,22 +1,6 @@
-[00:00:00.557] Server  LOG      ✓ Ready in 347ms
-[00:00:13.494] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:13.615] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:13.615] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/empleado/Ricardo-rachetti","route":"/empleado/[id]"}
-[00:00:13.615] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/empleado/Ricardo-rachetti color: rgb(120, 120, 120) color: inherit {"dp":"/empleado/[id]","o":"http://localhost:3000/empleado/Ricardo-rachetti","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770235149041}
-[00:00:16.243] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:16.372] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:16.372] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:16.372] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/?empleado=Ricardo-rachetti#contacto color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/?empleado=Ricardo-rachetti#contacto","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770235151797}
-[00:00:20.655] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:00:27.575] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/empleado/Martha-caviglia color: rgb(120, 120, 120) color: inherit {"dp":"/empleado/[id]","o":"http://localhost:3000/empleado/Martha-caviglia","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770235162997}
-[00:00:29.576] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:29.701] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:29.701] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:29.701] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/?empleado=Martha-caviglia#contacto color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/?empleado=Martha-caviglia#contacto","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770235165126}
-[00:05:07.249] Server  LOG      ✓ Compiled in 64ms
-[00:05:11.562] Server  LOG      ✓ Compiled in 57ms
-[19:13:08.368] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[19:13:08.434] Browser LOG     🔍 URL parameter empleado: null
-[19:13:08.434] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[19:13:08.434] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[19:13:08.434] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#contacto?empleado=Martha-caviglia color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#contacto?empleado=Martha-caviglia","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770304322849}
+[00:00:01.799] Server  LOG      ✓ Ready in 1502ms
+[00:00:11.670] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.859] Browser LOG     🔍 URL parameter empleado: null
+[00:00:13.359] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:13.359] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:13.359] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1778031527967} /_vercel/insights/view
