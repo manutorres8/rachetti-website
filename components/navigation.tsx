@@ -47,9 +47,8 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center gap-3">
-            <img src="/logoBlanco.png" alt={navigationContent.brand.logoAlt} className="h-12 w-12" />
-            <span className="text-xl font-serif font-bold text-white">{navigationContent.brand.name}</span>
+          <Link href="/" className="flex items-center gap-3" aria-label={navigationContent.brand.logoAlt}>
+            <img src="/rachetti_logo_web.png" alt={navigationContent.brand.logoAlt} className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Menu */}
