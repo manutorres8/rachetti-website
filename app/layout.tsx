@@ -27,6 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        {/* Favicons - place these files in /public for best compatibility */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      </head>
       <body className={`${inter.className} ${playfair.variable} ${montserrat.variable} antialiased`}>
         {children}
         <WhatsAppFloatingButton phoneNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "59898851719"} />
