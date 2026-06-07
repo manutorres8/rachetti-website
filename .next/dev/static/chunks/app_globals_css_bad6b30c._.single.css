@@ -94,6 +94,7 @@
 
 @layer theme {
   :root, :host {
+    --font-sans: "Inter", "Inter Fallback";
     --font-serif: "Playfair Display", "Playfair Display Fallback";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-red-50: #fef2f2;
@@ -154,6 +155,7 @@
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: "Inter", "Inter Fallback";
     --default-mono-font-family: var(--font-mono);
+    --font-primary: var(--font-mont, "Montserrat", var(--font-sans));
     --color-border: var(--border);
   }
 
@@ -426,6 +428,7 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
+    font-family: var(--font-sans);
   }
 }
 
@@ -6078,6 +6081,28 @@
     --sidebar-border: lab(15.204% 0 -.00000596046);
     --sidebar-ring: lab(34.924% 0 0);
   }
+}
+
+h1, h2, h3, h4, h5, h6, .brand, nav a, .page-header, .section-header {
+  font-family: var(--font-mont, var(--font-primary));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, .font-serif-title {
+  font-weight: 700;
+}
+
+h3, h4, nav a, .brand {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 2.5vw + 1rem, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 1.5vw + 1rem, 1.75rem);
 }
 
 html {
