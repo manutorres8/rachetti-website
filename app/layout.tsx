@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: metadataContent.site.description,
   generator: metadataContent.site.generator,
   icons: {
-    icon: "/miniatura logo.png",
+    icon: [{ url: "/miniatura logo.png", type: "image/png" }],
     apple: "/miniatura logo.png",
   },
 }
