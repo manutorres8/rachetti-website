@@ -34,7 +34,6 @@ export const newsItems: NewsItem[] = [
 },
 {
   id: "divorcio-uruguay",
-  image: "/divorcioUruguay.jpeg",
   date: "Jun 2026",
   title: "Divorcio en Uruguay: vías legales, derechos y aspectos patrimoniales",
   excerpt:
@@ -45,7 +44,6 @@ export const newsItems: NewsItem[] = [
 },
 {
   id: "mobbing-acoso-moral-laboral",
-  image: "/mobbingLaboral.jpeg",
   date: "Jun 2026",
   title: "Mobbing o acoso moral laboral: cómo identificarlo y qué protección existe en Uruguay",
   excerpt:
