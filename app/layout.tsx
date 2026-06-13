@@ -15,8 +15,15 @@ export const metadata: Metadata = {
   description: metadataContent.site.description,
   generator: metadataContent.site.generator,
   icons: {
-    icon: "/miniatura logo.png",
-    apple: "/miniatura logo.png",
+    icon: "/rachetti_logo_web.png",
+    apple: "/rachetti_logo_web.png",
+  },
+  openGraph: {
+    images: "/rachetti_logo_web.png",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: "/rachetti_logo_web.png",
   },
 }
 
